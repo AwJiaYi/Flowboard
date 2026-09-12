@@ -10,27 +10,27 @@ It provides teams with a shared workspace for managing projects, assigning tasks
 
 ### Login
 
-![FlowBoard Login](docs/01-login.png)
+![FlowBoard Login](docs/screenshots/01-login.png)
 
 ### Register
 
-![FlowBoard Register](docs/02-register.png)
+![FlowBoard Register](docs/screenshots/02-register.png)
 
 ### Dashboard
 
-![FlowBoard Dashboard](docs/03-dashboard.png)
+![FlowBoard Dashboard](docs/screenshots/03-dashboard.png)
 
 ### Workspace
 
-![FlowBoard Workspace](docs/04-workspace.png)
+![FlowBoard Workspace](docs/screenshots/04-workspace.png)
 
 ### Kanban Board
 
-![FlowBoard Kanban Board](docs/05-kanban-board.png)
+![FlowBoard Kanban Board](docs/screenshots/05-kanban-board.png)
 
 ### Task Details
 
-![FlowBoard Task Details](docs/06-task-details.png)
+![FlowBoard Task Details](docs/screenshots/06-task-details.png)
 
 ---
 
