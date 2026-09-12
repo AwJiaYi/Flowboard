@@ -1,45 +1,15 @@
 # FlowBoard
 
-FlowBoard is a real-time team task management application built with **Next.js, TypeScript, Tailwind CSS, Supabase, and PostgreSQL**.
+FlowBoard is a real-time team task management application built with Next.js, TypeScript, Tailwind CSS, Supabase, and PostgreSQL.
 
-It provides teams with a shared workspace for managing projects, assigning tasks, collaborating through comments, managing workspace roles, and receiving real-time updates across multiple users.
-
----
-
-## Screenshots
-
-### Login
-
-![FlowBoard Login](docs/screenshots/01-login.png)
-
-### Register
-
-![FlowBoard Register](docs/screenshots/02-register.png)
-
-### Dashboard
-
-![FlowBoard Dashboard](docs/screenshots/03-dashboard.png)
-
-### Workspace
-
-![FlowBoard Workspace](docs/screenshots/04-workspace.png)
-
-### Kanban Board
-
-![FlowBoard Kanban Board](docs/screenshots/05-kanban-board.png)
-
-### Task Details
-
-![FlowBoard Task Details](docs/screenshots/06-task-details.png)
-
----
+It provides teams with a shared workspace for managing projects, assigning tasks, collaborating through comments, and receiving real-time updates across multiple users.
 
 ## Features
 
 ### Authentication
 - User registration and login
 - Supabase Authentication
-- Automatic user profile creation
+- Automatic profile creation
 - Protected workspace and project access
 
 ### Workspace Management
@@ -47,9 +17,8 @@ It provides teams with a shared workspace for managing projects, assigning tasks
 - Add registered users by email
 - Owner, Admin, and Member roles
 - Role-based access control
-- Promote members to Admin
-- Demote Admins to Member
-- Remove members from a workspace
+- Promote and demote members
+- Remove workspace members
 
 ### Project Management
 - Create projects inside workspaces
@@ -61,23 +30,22 @@ It provides teams with a shared workspace for managing projects, assigning tasks
 - Create tasks
 - Update task status
 - Assign tasks to workspace members
-- Set Low, Medium, or High priority
-- Add task descriptions
-- Set due dates
+- Set priority: Low, Medium, High
+- Add descriptions and due dates
 - Open detailed task pages
 
 ### Search and Filtering
-- Search tasks by title or description
+- Search by task title or description
 - Filter by priority
 - Filter by assignee
 - Filter by status
 - Filter unassigned tasks
-- Reset active filters
+- Reset filters
 
 ### Task Details
 - Edit task title and description
 - Update priority
-- Reassign workspace members
+- Reassign team members
 - Update due dates
 - View task metadata
 - View comments and workspace activity
@@ -89,7 +57,7 @@ It provides teams with a shared workspace for managing projects, assigning tasks
 - Multi-user collaboration
 
 ### Real-Time Updates
-FlowBoard uses **Supabase Realtime** to synchronize changes across active users.
+FlowBoard uses Supabase Realtime to synchronize changes across active users.
 
 Real-time updates include:
 - Task changes
@@ -98,8 +66,6 @@ Real-time updates include:
 - Activity updates
 
 Changes made by one user can appear for other active users without manually refreshing the page.
-
----
 
 ## Role-Based Access Control
 
@@ -124,9 +90,7 @@ FlowBoard supports three workspace roles.
 - Create and update tasks
 - Participate in task discussions
 
-Workspace permissions are enforced using **PostgreSQL Row Level Security** and **Supabase RPC functions**.
-
----
+Permissions are enforced using PostgreSQL Row Level Security and Supabase RPC functions.
 
 ## Tech Stack
 
@@ -147,8 +111,6 @@ Workspace permissions are enforced using **PostgreSQL Row Level Security** and *
 - Security-definer RPC functions
 - Workspace membership authorization
 - Role-based permission checks
-
----
 
 ## Database Structure
 
@@ -180,8 +142,6 @@ User
                           +-- Comments
 ```
 
----
-
 ## Application Flow
 
 ```text
@@ -206,7 +166,33 @@ Task Details
 Comments + Activity
 ```
 
----
+## Screenshots
+
+Add screenshots after deployment.
+
+### Dashboard
+
+```text
+docs/screenshots/dashboard.png
+```
+
+### Workspace
+
+```text
+docs/screenshots/workspace.png
+```
+
+### Kanban Board
+
+```text
+docs/screenshots/kanban-board.png
+```
+
+### Task Details
+
+```text
+docs/screenshots/task-details.png
+```
 
 ## Local Development
 
@@ -242,23 +228,19 @@ Open:
 http://localhost:3000
 ```
 
----
-
 ## Production Build
 
-Verify the project before deployment:
+To verify the project before deployment:
 
 ```bash
 npm run build
 ```
 
-Run the production server locally:
+Then run the production server locally with:
 
 ```bash
 npm start
 ```
-
----
 
 ## Environment Variables
 
@@ -271,8 +253,6 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 
 Do not commit `.env.local` or other environment files containing project credentials.
 
----
-
 ## Security Notes
 
 FlowBoard uses PostgreSQL Row Level Security to restrict data access based on authenticated workspace membership.
@@ -280,8 +260,6 @@ FlowBoard uses PostgreSQL Row Level Security to restrict data access based on au
 Sensitive backend credentials are not stored in the client application.
 
 The frontend uses only the Supabase publishable key.
-
----
 
 ## Project Purpose
 
@@ -299,8 +277,6 @@ FlowBoard was developed as a software engineering portfolio project to demonstra
 - Search and filtering
 - Multi-user workspace management
 
----
-
 ## Future Improvements
 
 Possible future extensions include:
@@ -315,9 +291,6 @@ Possible future extensions include:
 - More detailed task-specific audit logs
 - Automated tests
 
----
-
 ## Author
 
 Software Engineering Portfolio Project
-Deployment test.
